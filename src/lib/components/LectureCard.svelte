@@ -3,63 +3,128 @@
     let { unitData } = $props();
     let isExpanded = $state(false);
 
+    // Per-unit color palette
+    const unitStyles = {
+        "Unit I": {
+            accent: "#38BDF8",
+            bg: "rgba(56,189,248,0.08)",
+            label: "sky",
+        },
+        "Unit II": {
+            accent: "#A78BFA",
+            bg: "rgba(167,139,250,0.08)",
+            label: "violet",
+        },
+        "Unit III": {
+            accent: "#34D399",
+            bg: "rgba(52,211,153,0.08)",
+            label: "emerald",
+        },
+        "Unit IV": {
+            accent: "#FCD34D",
+            bg: "rgba(252,211,77,0.08)",
+            label: "amber",
+        },
+        "Unit V": {
+            accent: "#FB7185",
+            bg: "rgba(251,113,133,0.08)",
+            label: "rose",
+        },
+    };
+
+    // Unit number (I=1, II=2 …)
+    const unitNums = {
+        "Unit I": "I",
+        "Unit II": "II",
+        "Unit III": "III",
+        "Unit IV": "IV",
+        "Unit V": "V",
+    };
+
+    const style = $derived(
+        unitStyles[/** @type {keyof typeof unitStyles} */ (unitData.unit)] ??
+            unitStyles["Unit I"],
+    );
+    const num = $derived(
+        unitNums[/** @type {keyof typeof unitNums} */ (unitData.unit)] ?? "?",
+    );
+
     function toggle() {
         isExpanded = !isExpanded;
     }
 
-    // Re-trigger MathJax when expanded
-    function onExpand() {
-        if (
-            isExpanded &&
-            typeof window !== "undefined" &&
-            /** @type {any} */ (window).MathJax
-        ) {
-            setTimeout(() => {
-                /** @type {any} */ (window).MathJax.typesetPromise();
-            }, 50);
-        }
-    }
-
     $effect(() => {
-        onExpand();
+        if (isExpanded && typeof window !== "undefined") {
+            setTimeout(() => {
+                // MathJax
+                if (/** @type {any} */ (window).MathJax) {
+                    /** @type {any} */ (window).MathJax.typesetPromise();
+                }
+                // Mermaid
+                if (/** @type {any} */ (window).mermaid) {
+                    try {
+                        /** @type {any} */ (window).mermaid.run({
+                            querySelector: ".mermaid",
+                        });
+                    } catch (e) {
+                        console.error("Mermaid error:", e);
+                    }
+                }
+            }, 60);
+        }
     });
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-    class="bg-[var(--surface-dark)] border rounded-[var(--radius-lg)] mb-5 overflow-hidden transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-md hover:shadow-black/30 hover:transform hover:-translate-y-0.5 {isExpanded
-        ? 'border-opacity-30 border-white'
-        : 'border-[var(--border-glass)]'}"
+    class="unit-card"
+    class:expanded={isExpanded}
+    style="--unit-accent: {style.accent}; --unit-bg: {style.bg};"
 >
+    <!-- ── Header ── -->
     <div
-        class="p-5 flex justify-between items-center cursor-pointer select-none transition-colors duration-300 hover:bg-white/5"
+        class="unit-card-header"
         onclick={toggle}
+        role="button"
+        tabindex="0"
+        aria-expanded={isExpanded}
+        aria-controls="unit-body-{unitData.unit}"
     >
-        <div class="flex flex-col gap-1.5 flex-1">
-            <span
-                class="inline-block px-3 py-1 bg-[var(--accent-glow)] text-[var(--accent-primary)] text-xs font-bold tracking-wider uppercase rounded-full w-max border border-[var(--accent-primary)]/20 shadow-sm"
-                >{unitData.unit}</span
-            >
-            <h2
-                class="text-[1.35rem] leading-tight m-0 text-white font-semibold pr-2"
-            >
-                {unitData.title}
-            </h2>
-        </div>
+        <!-- Colored number badge -->
         <div
-            class="w-10 h-10 rounded-full flex items-center justify-center bg-white/5 text-[var(--text-muted)] transition-all duration-300 border border-transparent shadow-[var(--shadow-inner)] {isExpanded
-                ? 'rotate-180 bg-[var(--accent-primary)] text-white border-white/20'
-                : ''}"
+            class="unit-num"
+            style="background: {style.bg}; color: {style.accent}; border-color: {style.accent}22;"
+        >
+            {num}
+        </div>
+
+        <!-- Text meta -->
+        <div class="unit-card-meta">
+            <span
+                class="unit-badge"
+                style="color: {style.accent}; border-color: {style.accent}55;"
+            >
+                {unitData.unit}
+            </span>
+            <p class="unit-title">{unitData.title}</p>
+        </div>
+
+        <!-- Chevron -->
+        <div
+            class="unit-chevron"
+            class:open={isExpanded}
+            style={isExpanded
+                ? `background: ${style.accent}; border-color: ${style.accent};`
+                : ""}
         >
             <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                stroke-width="2.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
             >
@@ -68,19 +133,24 @@
         </div>
     </div>
 
+    <!-- ── Expanded Body ── -->
     {#if isExpanded}
-        <div
-            class="p-[1.25rem_1.5rem_1.75rem] border-t border-[var(--border-glass)] bg-gradient-to-b from-transparent to-black/20 animate-[slideDown_0.3s_cubic-bezier(0.4,0,0.2,1)]"
-        >
-            {#each unitData.topics as topic}
-                <div class="mb-8 last:mb-0">
+        <div class="unit-body" id="unit-body-{unitData.unit}">
+            {#each unitData.topics as topic, i}
+                <div
+                    class="topic-section"
+                    style="animation: fadeUp 0.3s cubic-bezier(0.22,1,0.36,1) {i *
+                        0.06}s both;"
+                >
                     <h3
-                        class="text-xl text-[var(--accent-primary)] mb-3 pb-2 border-b border-[var(--border-glass)] font-semibold"
+                        class="topic-title"
+                        style="--unit-accent: {style.accent};"
                     >
                         {topic.title}
                     </h3>
                     <div
-                        class="text-[0.95rem] leading-[1.7] text-[var(--text-secondary)] list-inside marker:text-[var(--accent-secondary)] space-y-3 prose-p:mb-3 prose-ul:mb-3 prose-ul:pl-4 prose-li:mb-1.5 prose-strong:text-white prose-strong:font-medium"
+                        class="prose-content"
+                        style="--unit-accent: {style.accent};"
                     >
                         {@html topic.content}
                     </div>
@@ -89,16 +159,3 @@
         </div>
     {/if}
 </div>
-
-<style>
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-</style>
