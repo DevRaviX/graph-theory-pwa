@@ -1,0 +1,225 @@
+{
+    "unit": "Unit 4 - Cutset & Circuit Matrix (Exam Level)",
+    "questions": [
+        {
+            "id": "U4Q1",
+            "question": "A cutset in a connected graph is a set of edges whose removal:",
+            "options": [
+                "Creates a cycle",
+                "Disconnects the graph",
+                "Reduces degree",
+                "Creates spanning tree"
+            ],
+            "answer": "Disconnects the graph"
+        },
+        {
+            "id": "U4Q2",
+            "question": "Every cutset in a connected graph must contain at least:",
+            "options": [
+                "One vertex",
+                "One branch of every spanning tree",
+                "One cycle",
+                "Two edges"
+            ],
+            "answer": "One branch of every spanning tree"
+        },
+        {
+            "id": "U4Q3",
+            "question": "The smallest cutset of a graph determines:",
+            "options": [
+                "Degree",
+                "Connectivity",
+                "Diameter",
+                "Planarity"
+            ],
+            "answer": "Connectivity"
+        },
+        {
+            "id": "U4Q4",
+            "question": "Edge connectivity of a tree is:",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "n-1"
+            ],
+            "answer": "1"
+        },
+        {
+            "id": "U4Q5",
+            "question": "Vertex connectivity of a tree is:",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "n-1"
+            ],
+            "answer": "1"
+        },
+        {
+            "id": "U4Q6",
+            "question": "Ring sum (⊕) of two cutsets results in:",
+            "options": [
+                "Always a cycle",
+                "Another cutset or edge-disjoint union of cutsets",
+                "Null graph",
+                "Complete graph"
+            ],
+            "answer": "Another cutset or edge-disjoint union of cutsets"
+        },
+        {
+            "id": "U4Q7",
+            "question": "Circuit matrix represents:",
+            "options": [
+                "Vertices",
+                "Edges participation in circuits",
+                "Degree",
+                "Connectivity only"
+            ],
+            "answer": "Edges participation in circuits"
+        },
+        {
+            "id": "U4Q8",
+            "question": "In circuit matrix, entries are usually:",
+            "options": [
+                "Real numbers",
+                "Binary (0,1)",
+                "Negative numbers",
+                "Prime numbers"
+            ],
+            "answer": "Binary (0,1)"
+        },
+        {
+            "id": "U4Q9",
+            "question": "Number of fundamental circuits in a graph equals:",
+            "options": [
+                "V-1",
+                "E-V+1",
+                "V+E",
+                "E+1"
+            ],
+            "answer": "E-V+1"
+        },
+        {
+            "id": "U4Q10",
+            "question": "Fundamental circuit is formed by:",
+            "options": [
+                "Removing edge from tree",
+                "Adding a non-tree edge to spanning tree",
+                "Deleting vertex",
+                "Adding vertex"
+            ],
+            "answer": "Adding a non-tree edge to spanning tree"
+        },
+        {
+            "id": "U4Q11",
+            "question": "If graph has V=8 and E=12, number of fundamental circuits:",
+            "options": [
+                "4",
+                "5",
+                "3",
+                "6"
+            ],
+            "answer": "5"
+        },
+        {
+            "id": "U4Q12",
+            "question": "Cutset matrix represents:",
+            "options": [
+                "Vertex degrees",
+                "Edges in cutsets",
+                "Faces",
+                "Weights"
+            ],
+            "answer": "Edges in cutsets"
+        },
+        {
+            "id": "U4Q13",
+            "question": "If removing a set of edges does not disconnect graph, that set is:",
+            "options": [
+                "Cutset",
+                "Not a cutset",
+                "Cycle",
+                "Spanning tree"
+            ],
+            "answer": "Not a cutset"
+        },
+        {
+            "id": "U4Q14",
+            "question": "In tree, total fundamental circuits are:",
+            "options": [
+                "0",
+                "1",
+                "n-1",
+                "n"
+            ],
+            "answer": "0"
+        },
+        {
+            "id": "U4Q15",
+            "question": "A bridge in graph is:",
+            "options": [
+                "Edge in cycle",
+                "Edge whose removal disconnects graph",
+                "Vertex",
+                "Face"
+            ],
+            "answer": "Edge whose removal disconnects graph"
+        },
+        {
+            "id": "U4Q16",
+            "question": "If a graph has no cut edges, it is:",
+            "options": [
+                "Tree",
+                "2-edge connected",
+                "Disconnected",
+                "Forest"
+            ],
+            "answer": "2-edge connected"
+        },
+        {
+            "id": "U4Q17",
+            "question": "Circuit matrix rank equals:",
+            "options": [
+                "V-1",
+                "E-V+1",
+                "V+E",
+                "E"
+            ],
+            "answer": "E-V+1"
+        },
+        {
+            "id": "U4Q18",
+            "question": "Cutset rank equals:",
+            "options": [
+                "V-1",
+                "E-V+1",
+                "V+E",
+                "E"
+            ],
+            "answer": "V-1"
+        },
+        {
+            "id": "U4Q19",
+            "question": "Total number of branches in spanning tree equals:",
+            "options": [
+                "E",
+                "V-1",
+                "V",
+                "E-V"
+            ],
+            "answer": "V-1"
+        },
+        {
+            "id": "U4Q20",
+            "question": "Circuit matrix and cutset matrix are:",
+            "options": [
+                "Independent",
+                "Orthogonal over GF(2)",
+                "Equal",
+                "Unrelated"
+            ],
+            "answer": "Orthogonal over GF(2)"
+        }
+    ]
+}

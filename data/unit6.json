@@ -1,0 +1,280 @@
+{
+    "unit": "Unit 6 - BFS & DFS (Exam Level)",
+    "questions": [
+        {
+            "id": "U6Q1",
+            "question": "BFS traversal uses which data structure?",
+            "options": [
+                "Stack",
+                "Queue",
+                "Priority Queue",
+                "Heap"
+            ],
+            "answer": "Queue"
+        },
+        {
+            "id": "U6Q2",
+            "question": "DFS traversal uses which data structure?",
+            "options": [
+                "Queue",
+                "Stack",
+                "Heap",
+                "Linked list"
+            ],
+            "answer": "Stack"
+        },
+        {
+            "id": "U6Q3",
+            "question": "BFS follows which principle?",
+            "options": [
+                "LIFO",
+                "FIFO",
+                "Greedy",
+                "Divide & Conquer"
+            ],
+            "answer": "FIFO"
+        },
+        {
+            "id": "U6Q4",
+            "question": "DFS follows which principle?",
+            "options": [
+                "FIFO",
+                "LIFO",
+                "Dynamic Programming",
+                "Greedy"
+            ],
+            "answer": "LIFO"
+        },
+        {
+            "id": "U6Q5",
+            "question": "Time complexity of BFS is:",
+            "options": [
+                "O(V)",
+                "O(E)",
+                "O(V+E)",
+                "O(VE)"
+            ],
+            "answer": "O(V+E)"
+        },
+        {
+            "id": "U6Q6",
+            "question": "Time complexity of DFS is:",
+            "options": [
+                "O(V)",
+                "O(E)",
+                "O(V+E)",
+                "O(V²)"
+            ],
+            "answer": "O(V+E)"
+        },
+        {
+            "id": "U6Q7",
+            "question": "BFS is used to find:",
+            "options": [
+                "Longest path",
+                "Shortest path in unweighted graph",
+                "MST",
+                "Cutset"
+            ],
+            "answer": "Shortest path in unweighted graph"
+        },
+        {
+            "id": "U6Q8",
+            "question": "DFS is useful for:",
+            "options": [
+                "Level order traversal",
+                "Cycle detection",
+                "Finding min cut",
+                "Sorting edges only"
+            ],
+            "answer": "Cycle detection"
+        },
+        {
+            "id": "U6Q9",
+            "question": "In BFS, nodes are explored:",
+            "options": [
+                "Depth-wise",
+                "Level-wise",
+                "Randomly",
+                "Backward"
+            ],
+            "answer": "Level-wise"
+        },
+        {
+            "id": "U6Q10",
+            "question": "In DFS, backtracking occurs when:",
+            "options": [
+                "Queue empty",
+                "Stack empty",
+                "No unvisited adjacent vertex",
+                "Cycle detected"
+            ],
+            "answer": "No unvisited adjacent vertex"
+        },
+        {
+            "id": "U6Q11",
+            "question": "Which traversal can be implemented recursively easily?",
+            "options": [
+                "BFS",
+                "DFS",
+                "Both equally",
+                "Neither"
+            ],
+            "answer": "DFS"
+        },
+        {
+            "id": "U6Q12",
+            "question": "BFS requires extra memory proportional to:",
+            "options": [
+                "Height of tree",
+                "Maximum width of graph",
+                "Edges only",
+                "Vertices only"
+            ],
+            "answer": "Maximum width of graph"
+        },
+        {
+            "id": "U6Q13",
+            "question": "DFS requires extra memory proportional to:",
+            "options": [
+                "Width",
+                "Depth of graph",
+                "Edges",
+                "Faces"
+            ],
+            "answer": "Depth of graph"
+        },
+        {
+            "id": "U6Q14",
+            "question": "BFS on tree produces:",
+            "options": [
+                "DFS tree",
+                "Level order tree",
+                "Cycle",
+                "Cutset"
+            ],
+            "answer": "Level order tree"
+        },
+        {
+            "id": "U6Q15",
+            "question": "DFS traversal order depends on:",
+            "options": [
+                "Vertex degrees only",
+                "Order of adjacency list",
+                "Weights",
+                "Faces"
+            ],
+            "answer": "Order of adjacency list"
+        },
+        {
+            "id": "U6Q16",
+            "question": "In disconnected graph, BFS must be applied:",
+            "options": [
+                "Once only",
+                "From each unvisited vertex",
+                "From source only",
+                "Not possible"
+            ],
+            "answer": "From each unvisited vertex"
+        },
+        {
+            "id": "U6Q17",
+            "question": "DFS can detect:",
+            "options": [
+                "Only shortest path",
+                "Cycles",
+                "Only MST",
+                "Only cutsets"
+            ],
+            "answer": "Cycles"
+        },
+        {
+            "id": "U6Q18",
+            "question": "BFS always finds shortest path in:",
+            "options": [
+                "Weighted graph",
+                "Unweighted graph",
+                "Directed graph only",
+                "Tree only"
+            ],
+            "answer": "Unweighted graph"
+        },
+        {
+            "id": "U6Q19",
+            "question": "Which traversal is preferred for topological sorting?",
+            "options": [
+                "BFS",
+                "DFS",
+                "Prim",
+                "Kruskal"
+            ],
+            "answer": "DFS"
+        },
+        {
+            "id": "U6Q20",
+            "question": "Stack overflow risk is higher in:",
+            "options": [
+                "BFS",
+                "DFS recursive",
+                "Queue",
+                "Heap"
+            ],
+            "answer": "DFS recursive"
+        },
+        {
+            "id": "U6Q21",
+            "question": "BFS tree height represents:",
+            "options": [
+                "Maximum depth from source",
+                "Diameter",
+                "MST weight",
+                "Cut capacity"
+            ],
+            "answer": "Maximum depth from source"
+        },
+        {
+            "id": "U6Q22",
+            "question": "DFS can be used to find:",
+            "options": [
+                "Connected components",
+                "Minimum cut",
+                "Max flow",
+                "Planarity only"
+            ],
+            "answer": "Connected components"
+        },
+        {
+            "id": "U6Q23",
+            "question": "In BFS, first visited node after source is:",
+            "options": [
+                "Deepest node",
+                "Any adjacent node",
+                "Leaf only",
+                "Root only"
+            ],
+            "answer": "Any adjacent node"
+        },
+        {
+            "id": "U6Q24",
+            "question": "Which traversal is better for shortest path in maze?",
+            "options": [
+                "DFS",
+                "BFS",
+                "Prim",
+                "Kruskal"
+            ],
+            "answer": "BFS"
+        },
+        {
+            "id": "U6Q25",
+            "question": "DFS produces a spanning tree known as:",
+            "options": [
+                "Level tree",
+                "DFS tree",
+                "MST",
+                "Cut tree"
+            ],
+            "answer": "DFS tree"
+        }
+    ]
+}

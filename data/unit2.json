@@ -1,0 +1,335 @@
+{
+    "unit": "Unit 2 - Trees & Spanning Trees (Exam Level)",
+    "questions": [
+        {
+            "id": "U2Q1",
+            "question": "A tree with 15 vertices has how many edges?",
+            "options": [
+                "15",
+                "14",
+                "13",
+                "16"
+            ],
+            "answer": "14"
+        },
+        {
+            "id": "U2Q2",
+            "question": "If a connected graph has n vertices and n-1 edges, then it is:",
+            "options": [
+                "Cycle",
+                "Tree",
+                "Complete graph",
+                "Bipartite only"
+            ],
+            "answer": "Tree"
+        },
+        {
+            "id": "U2Q3",
+            "question": "A tree always has at least how many pendant vertices?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "0"
+            ],
+            "answer": "2"
+        },
+        {
+            "id": "U2Q4",
+            "question": "In a tree, between any two vertices there exists:",
+            "options": [
+                "At least two paths",
+                "Exactly one path",
+                "No path",
+                "Cycle"
+            ],
+            "answer": "Exactly one path"
+        },
+        {
+            "id": "U2Q5",
+            "question": "Adding one edge to a tree creates:",
+            "options": [
+                "Forest",
+                "Exactly one cycle",
+                "Two cycles",
+                "Disconnected graph"
+            ],
+            "answer": "Exactly one cycle"
+        },
+        {
+            "id": "U2Q6",
+            "question": "Removing any edge from a tree results in:",
+            "options": [
+                "Cycle",
+                "Disconnected graph",
+                "Complete graph",
+                "Null graph"
+            ],
+            "answer": "Disconnected graph"
+        },
+        {
+            "id": "U2Q7",
+            "question": "A graph with n vertices and no cycles but not connected is called:",
+            "options": [
+                "Tree",
+                "Forest",
+                "Complete graph",
+                "Circuit"
+            ],
+            "answer": "Forest"
+        },
+        {
+            "id": "U2Q8",
+            "question": "The diameter of a tree is:",
+            "options": [
+                "Shortest path",
+                "Longest simple path",
+                "Degree sum",
+                "n-1 always"
+            ],
+            "answer": "Longest simple path"
+        },
+        {
+            "id": "U2Q9",
+            "question": "If a tree has 8 vertices of degree 1 and all others degree 3, number of vertices is:",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "16"
+            ],
+            "answer": "14"
+        },
+        {
+            "id": "U2Q10",
+            "question": "Sum of degrees in a tree with n vertices is:",
+            "options": [
+                "n",
+                "n-1",
+                "2(n-1)",
+                "2n"
+            ],
+            "answer": "2(n-1)"
+        },
+        {
+            "id": "U2Q11",
+            "question": "In a binary tree (as per notes), exactly how many vertices have degree 2?",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "Depends"
+            ],
+            "answer": "1"
+        },
+        {
+            "id": "U2Q12",
+            "question": "Number of vertices in such binary tree is always:",
+            "options": [
+                "Even",
+                "Odd",
+                "Prime",
+                "Multiple of 4"
+            ],
+            "answer": "Odd"
+        },
+        {
+            "id": "U2Q13",
+            "question": "A spanning tree of graph with 20 vertices contains how many edges?",
+            "options": [
+                "20",
+                "19",
+                "18",
+                "21"
+            ],
+            "answer": "19"
+        },
+        {
+            "id": "U2Q14",
+            "question": "Number of spanning trees in a complete graph K3 is:",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "answer": "3"
+        },
+        {
+            "id": "U2Q15",
+            "question": "A spanning tree must include:",
+            "options": [
+                "All edges",
+                "All vertices",
+                "Only cycles",
+                "Only leaves"
+            ],
+            "answer": "All vertices"
+        },
+        {
+            "id": "U2Q16",
+            "question": "A tree is minimally connected means:",
+            "options": [
+                "Removing any vertex disconnects",
+                "Removing any edge disconnects",
+                "Adding edge disconnects",
+                "Always cyclic"
+            ],
+            "answer": "Removing any edge disconnects"
+        },
+        {
+            "id": "U2Q17",
+            "question": "If a graph is minimally connected, then it is:",
+            "options": [
+                "Complete graph",
+                "Tree",
+                "Cycle",
+                "Forest"
+            ],
+            "answer": "Tree"
+        },
+        {
+            "id": "U2Q18",
+            "question": "Height of a tree is defined as:",
+            "options": [
+                "Number of vertices",
+                "Maximum level",
+                "Total edges",
+                "Degree sum"
+            ],
+            "answer": "Maximum level"
+        },
+        {
+            "id": "U2Q19",
+            "question": "Path length in tree equals:",
+            "options": [
+                "Number of vertices",
+                "Sum of levels of pendant vertices",
+                "Degree sum",
+                "Diameter"
+            ],
+            "answer": "Sum of levels of pendant vertices"
+        },
+        {
+            "id": "U2Q20",
+            "question": "Maximum number of edges in a forest with n vertices and k components:",
+            "options": [
+                "n-k",
+                "n+k",
+                "n-1",
+                "k-1"
+            ],
+            "answer": "n-k"
+        },
+        {
+            "id": "U2Q21",
+            "question": "If graph has exactly one path between every pair of vertices, it is:",
+            "options": [
+                "Cycle",
+                "Tree",
+                "Complete graph",
+                "Bipartite only"
+            ],
+            "answer": "Tree"
+        },
+        {
+            "id": "U2Q22",
+            "question": "A leaf node in a tree has degree:",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "answer": "1"
+        },
+        {
+            "id": "U2Q23",
+            "question": "Number of vertices of degree 1 in a tree with 1 vertex of degree 3 and rest degree 1:",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "answer": "3"
+        },
+        {
+            "id": "U2Q24",
+            "question": "Removing a vertex from tree can produce:",
+            "options": [
+                "Cycle",
+                "Disconnected graph",
+                "Complete graph",
+                "Null graph"
+            ],
+            "answer": "Disconnected graph"
+        },
+        {
+            "id": "U2Q25",
+            "question": "A spanning tree of weighted graph ignores:",
+            "options": [
+                "Weights",
+                "Vertices",
+                "Connectivity",
+                "Edges"
+            ],
+            "answer": "Weights"
+        },
+        {
+            "id": "U2Q26",
+            "question": "Number of edges added to connect k components:",
+            "options": [
+                "k-1",
+                "k",
+                "n-1",
+                "n+k"
+            ],
+            "answer": "k-1"
+        },
+        {
+            "id": "U2Q27",
+            "question": "In any tree, number of vertices of odd degree is:",
+            "options": [
+                "Odd",
+                "Even",
+                "Zero",
+                "One"
+            ],
+            "answer": "Even"
+        },
+        {
+            "id": "U2Q28",
+            "question": "A tree with 1 vertex has edges:",
+            "options": [
+                "1",
+                "0",
+                "2",
+                "Undefined"
+            ],
+            "answer": "0"
+        },
+        {
+            "id": "U2Q29",
+            "question": "Total possible spanning trees increases with:",
+            "options": [
+                "Vertices",
+                "Edges",
+                "Connectivity",
+                "All of these"
+            ],
+            "answer": "All of these"
+        },
+        {
+            "id": "U2Q30",
+            "question": "A spanning tree is:",
+            "options": [
+                "Independent graph",
+                "Subset of connected graph",
+                "Cycle graph",
+                "Disconnected graph"
+            ],
+            "answer": "Subset of connected graph"
+        }
+    ]
+}

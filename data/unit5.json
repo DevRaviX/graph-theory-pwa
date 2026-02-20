@@ -1,0 +1,335 @@
+{
+    "unit": "Unit 5 - Network Flow & Max Flow Min Cut (Exam Level)",
+    "questions": [
+        {
+            "id": "U5Q1",
+            "question": "In a flow network, source is a vertex with:",
+            "options": [
+                "No outgoing edges",
+                "No incoming edges",
+                "Equal in and out flow",
+                "Maximum degree"
+            ],
+            "answer": "No incoming edges"
+        },
+        {
+            "id": "U5Q2",
+            "question": "Sink is a vertex with:",
+            "options": [
+                "No outgoing edges",
+                "No incoming edges",
+                "Cycle",
+                "Maximum capacity"
+            ],
+            "answer": "No outgoing edges"
+        },
+        {
+            "id": "U5Q3",
+            "question": "Flow on an edge must satisfy:",
+            "options": [
+                "f > capacity",
+                "0 ≤ f ≤ capacity",
+                "f < 0",
+                "f unlimited"
+            ],
+            "answer": "0 ≤ f ≤ capacity"
+        },
+        {
+            "id": "U5Q4",
+            "question": "Flow conservation applies to:",
+            "options": [
+                "Source only",
+                "Sink only",
+                "Intermediate vertices",
+                "All vertices"
+            ],
+            "answer": "Intermediate vertices"
+        },
+        {
+            "id": "U5Q5",
+            "question": "Residual capacity of edge is:",
+            "options": [
+                "Capacity + Flow",
+                "Capacity - Flow",
+                "Flow - Capacity",
+                "Capacity only"
+            ],
+            "answer": "Capacity - Flow"
+        },
+        {
+            "id": "U5Q6",
+            "question": "An augmenting path is:",
+            "options": [
+                "Shortest path",
+                "Path with positive residual capacity",
+                "Cycle",
+                "Tree path"
+            ],
+            "answer": "Path with positive residual capacity"
+        },
+        {
+            "id": "U5Q7",
+            "question": "Bottleneck capacity of a path is:",
+            "options": [
+                "Maximum capacity edge",
+                "Minimum residual capacity in path",
+                "Sum of capacities",
+                "Average capacity"
+            ],
+            "answer": "Minimum residual capacity in path"
+        },
+        {
+            "id": "U5Q8",
+            "question": "Ford-Fulkerson algorithm terminates when:",
+            "options": [
+                "All vertices visited",
+                "No augmenting path exists",
+                "All edges used",
+                "Graph disconnected"
+            ],
+            "answer": "No augmenting path exists"
+        },
+        {
+            "id": "U5Q9",
+            "question": "Maximum flow equals:",
+            "options": [
+                "Maximum capacity",
+                "Minimum cut capacity",
+                "Total edges",
+                "Total vertices"
+            ],
+            "answer": "Minimum cut capacity"
+        },
+        {
+            "id": "U5Q10",
+            "question": "If capacities are integers, Ford-Fulkerson produces:",
+            "options": [
+                "Fractional flow",
+                "Integer flow",
+                "Infinite loop",
+                "Cycle"
+            ],
+            "answer": "Integer flow"
+        },
+        {
+            "id": "U5Q11",
+            "question": "Edmonds-Karp algorithm uses:",
+            "options": [
+                "DFS",
+                "BFS",
+                "Stack",
+                "Heap"
+            ],
+            "answer": "BFS"
+        },
+        {
+            "id": "U5Q12",
+            "question": "Time complexity of Edmonds-Karp is:",
+            "options": [
+                "O(VE)",
+                "O(VE²)",
+                "O(E)",
+                "O(V²)"
+            ],
+            "answer": "O(VE²)"
+        },
+        {
+            "id": "U5Q13",
+            "question": "In max-flow problem, cut divides graph into:",
+            "options": [
+                "Two disjoint sets S and T",
+                "Three sets",
+                "Cycle",
+                "Tree"
+            ],
+            "answer": "Two disjoint sets S and T"
+        },
+        {
+            "id": "U5Q14",
+            "question": "Capacity of cut equals:",
+            "options": [
+                "Sum of capacities crossing from S to T",
+                "Total edges",
+                "Degree sum",
+                "Residual flow"
+            ],
+            "answer": "Sum of capacities crossing from S to T"
+        },
+        {
+            "id": "U5Q15",
+            "question": "If max flow is 20, min cut capacity is:",
+            "options": [
+                "Less than 20",
+                "Greater than 20",
+                "20",
+                "Undefined"
+            ],
+            "answer": "20"
+        },
+        {
+            "id": "U5Q16",
+            "question": "Flow value is equal to:",
+            "options": [
+                "Total outgoing flow from source",
+                "Total edges",
+                "Total vertices",
+                "Total residual"
+            ],
+            "answer": "Total outgoing flow from source"
+        },
+        {
+            "id": "U5Q17",
+            "question": "If no path from source to sink exists, max flow is:",
+            "options": [
+                "1",
+                "0",
+                "Infinity",
+                "n-1"
+            ],
+            "answer": "0"
+        },
+        {
+            "id": "U5Q18",
+            "question": "Backward edges in residual graph represent:",
+            "options": [
+                "Unused capacity",
+                "Ability to reduce flow",
+                "New edges",
+                "Cut edges"
+            ],
+            "answer": "Ability to reduce flow"
+        },
+        {
+            "id": "U5Q19",
+            "question": "If residual capacity is zero, edge is:",
+            "options": [
+                "Fully saturated",
+                "Unused",
+                "Removed",
+                "Disconnected"
+            ],
+            "answer": "Fully saturated"
+        },
+        {
+            "id": "U5Q20",
+            "question": "Maximum possible flow is limited by:",
+            "options": [
+                "Minimum capacity edge",
+                "Minimum cut",
+                "Total vertices",
+                "Degree"
+            ],
+            "answer": "Minimum cut"
+        },
+        {
+            "id": "U5Q21",
+            "question": "In a network with single path S-A-T with capacities 5 and 3, max flow is:",
+            "options": [
+                "5",
+                "3",
+                "8",
+                "2"
+            ],
+            "answer": "3"
+        },
+        {
+            "id": "U5Q22",
+            "question": "If two parallel paths have capacities 4 and 6, max flow is:",
+            "options": [
+                "6",
+                "4",
+                "10",
+                "2"
+            ],
+            "answer": "10"
+        },
+        {
+            "id": "U5Q23",
+            "question": "Residual graph is constructed using:",
+            "options": [
+                "Original graph only",
+                "Capacity and current flow",
+                "Tree",
+                "Cycle"
+            ],
+            "answer": "Capacity and current flow"
+        },
+        {
+            "id": "U5Q24",
+            "question": "If capacity of every cut is at least 15, max flow is:",
+            "options": [
+                "<15",
+                "15",
+                ">15",
+                "Undefined"
+            ],
+            "answer": "≥15"
+        },
+        {
+            "id": "U5Q25",
+            "question": "Ford-Fulkerson may fail to terminate if capacities are:",
+            "options": [
+                "Integers",
+                "Rational numbers",
+                "Irrational numbers",
+                "Positive"
+            ],
+            "answer": "Irrational numbers"
+        },
+        {
+            "id": "U5Q26",
+            "question": "In residual graph, reverse edge capacity equals:",
+            "options": [
+                "Original capacity",
+                "Current flow",
+                "Zero always",
+                "Infinity"
+            ],
+            "answer": "Current flow"
+        },
+        {
+            "id": "U5Q27",
+            "question": "If an augmenting path has bottleneck 7, flow increases by:",
+            "options": [
+                "1",
+                "7",
+                "Minimum edge weight",
+                "Sum"
+            ],
+            "answer": "7"
+        },
+        {
+            "id": "U5Q28",
+            "question": "A minimum cut partitions vertices such that:",
+            "options": [
+                "Source and sink separated",
+                "Cycle created",
+                "Tree formed",
+                "Disconnected"
+            ],
+            "answer": "Source and sink separated"
+        },
+        {
+            "id": "U5Q29",
+            "question": "If max flow equals 0, then:",
+            "options": [
+                "No path from S to T",
+                "Graph complete",
+                "Cycle exists",
+                "Tree"
+            ],
+            "answer": "No path from S to T"
+        },
+        {
+            "id": "U5Q30",
+            "question": "Max-flow min-cut theorem states:",
+            "options": [
+                "Max flow ≥ Min cut",
+                "Max flow ≤ Min cut",
+                "Max flow = Min cut",
+                "Unrelated"
+            ],
+            "answer": "Max flow = Min cut"
+        }
+    ]
+}

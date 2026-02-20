@@ -1,0 +1,280 @@
+{
+    "unit": "Unit 3 - Minimum Spanning Tree (Exam Level)",
+    "questions": [
+        {
+            "id": "U3Q1",
+            "question": "A minimum spanning tree of a graph with n vertices contains how many edges?",
+            "options": [
+                "n",
+                "n-1",
+                "n+1",
+                "2n"
+            ],
+            "answer": "n-1"
+        },
+        {
+            "id": "U3Q2",
+            "question": "Prim’s algorithm is best suited for:",
+            "options": [
+                "Sparse graph",
+                "Dense graph",
+                "Directed graph",
+                "Disconnected graph"
+            ],
+            "answer": "Dense graph"
+        },
+        {
+            "id": "U3Q3",
+            "question": "Kruskal’s algorithm is best suited for:",
+            "options": [
+                "Dense graph",
+                "Sparse graph",
+                "Complete graph only",
+                "Tree only"
+            ],
+            "answer": "Sparse graph"
+        },
+        {
+            "id": "U3Q4",
+            "question": "Kruskal’s algorithm selects edges based on:",
+            "options": [
+                "Highest weight first",
+                "Random order",
+                "Increasing weight order",
+                "Vertex degree"
+            ],
+            "answer": "Increasing weight order"
+        },
+        {
+            "id": "U3Q5",
+            "question": "Prim’s algorithm grows a tree by:",
+            "options": [
+                "Selecting smallest edge globally",
+                "Selecting smallest edge from included vertices",
+                "Removing cycles",
+                "Deleting vertices"
+            ],
+            "answer": "Selecting smallest edge from included vertices"
+        },
+        {
+            "id": "U3Q6",
+            "question": "If all edge weights are distinct, the MST is:",
+            "options": [
+                "Unique",
+                "Multiple",
+                "Impossible",
+                "Disconnected"
+            ],
+            "answer": "Unique"
+        },
+        {
+            "id": "U3Q7",
+            "question": "If all edge weights are equal, MST:",
+            "options": [
+                "Is unique",
+                "May not be unique",
+                "Impossible",
+                "Forms cycle"
+            ],
+            "answer": "May not be unique"
+        },
+        {
+            "id": "U3Q8",
+            "question": "Time complexity of Kruskal’s algorithm mainly depends on:",
+            "options": [
+                "Sorting edges",
+                "DFS",
+                "BFS",
+                "Vertex removal"
+            ],
+            "answer": "Sorting edges"
+        },
+        {
+            "id": "U3Q9",
+            "question": "In Kruskal’s algorithm, cycle detection is done using:",
+            "options": [
+                "Stack",
+                "Queue",
+                "Union-Find",
+                "DFS only"
+            ],
+            "answer": "Union-Find"
+        },
+        {
+            "id": "U3Q10",
+            "question": "Prim’s algorithm can be implemented efficiently using:",
+            "options": [
+                "Stack",
+                "Queue",
+                "Priority Queue",
+                "Matrix only"
+            ],
+            "answer": "Priority Queue"
+        },
+        {
+            "id": "U3Q11",
+            "question": "A graph has 6 vertices. MST total edges selected are:",
+            "options": [
+                "6",
+                "5",
+                "4",
+                "7"
+            ],
+            "answer": "5"
+        },
+        {
+            "id": "U3Q12",
+            "question": "If a graph is disconnected, MST:",
+            "options": [
+                "Exists",
+                "Does not exist",
+                "Becomes cycle",
+                "Becomes complete"
+            ],
+            "answer": "Does not exist"
+        },
+        {
+            "id": "U3Q13",
+            "question": "The smallest edge in a cycle is always:",
+            "options": [
+                "In MST",
+                "Excluded from MST",
+                "Optional",
+                "Ignored"
+            ],
+            "answer": "In MST"
+        },
+        {
+            "id": "U3Q14",
+            "question": "The largest edge in a cycle is always:",
+            "options": [
+                "Included",
+                "Excluded if alternative exists",
+                "Mandatory",
+                "Root edge"
+            ],
+            "answer": "Excluded if alternative exists"
+        },
+        {
+            "id": "U3Q15",
+            "question": "MST of a tree is:",
+            "options": [
+                "Tree itself",
+                "Null graph",
+                "Complete graph",
+                "Cycle"
+            ],
+            "answer": "Tree itself"
+        },
+        {
+            "id": "U3Q16",
+            "question": "If two MSTs exist, their total weights are:",
+            "options": [
+                "Different",
+                "Same",
+                "Random",
+                "Increasing"
+            ],
+            "answer": "Same"
+        },
+        {
+            "id": "U3Q17",
+            "question": "Prim’s algorithm starts with:",
+            "options": [
+                "Edge",
+                "Vertex",
+                "Cycle",
+                "Face"
+            ],
+            "answer": "Vertex"
+        },
+        {
+            "id": "U3Q18",
+            "question": "Kruskal’s algorithm stops after selecting:",
+            "options": [
+                "V edges",
+                "V-1 edges",
+                "E edges",
+                "V+1 edges"
+            ],
+            "answer": "V-1 edges"
+        },
+        {
+            "id": "U3Q19",
+            "question": "MST minimizes:",
+            "options": [
+                "Number of vertices",
+                "Total weight",
+                "Number of cycles",
+                "Diameter"
+            ],
+            "answer": "Total weight"
+        },
+        {
+            "id": "U3Q20",
+            "question": "If an edge is heavier than all edges in a cycle, it:",
+            "options": [
+                "Must be in MST",
+                "Cannot be in MST",
+                "Always chosen first",
+                "Forms root"
+            ],
+            "answer": "Cannot be in MST"
+        },
+        {
+            "id": "U3Q21",
+            "question": "Adding any non-tree edge to MST creates:",
+            "options": [
+                "Forest",
+                "Exactly one cycle",
+                "Disconnected graph",
+                "Null graph"
+            ],
+            "answer": "Exactly one cycle"
+        },
+        {
+            "id": "U3Q22",
+            "question": "Removing any edge from MST results in:",
+            "options": [
+                "Cycle",
+                "Disconnected graph",
+                "Complete graph",
+                "Forest"
+            ],
+            "answer": "Disconnected graph"
+        },
+        {
+            "id": "U3Q23",
+            "question": "Total weight of MST is always:",
+            "options": [
+                "Maximum",
+                "Minimum",
+                "Average",
+                "Zero"
+            ],
+            "answer": "Minimum"
+        },
+        {
+            "id": "U3Q24",
+            "question": "If graph has V vertices and E edges, MST has:",
+            "options": [
+                "E edges",
+                "V edges",
+                "V-1 edges",
+                "E-1 edges"
+            ],
+            "answer": "V-1 edges"
+        },
+        {
+            "id": "U3Q25",
+            "question": "Prim’s and Kruskal’s algorithm both produce:",
+            "options": [
+                "Different trees always",
+                "Same total weight MST",
+                "Cycle",
+                "Disconnected graph"
+            ],
+            "answer": "Same total weight MST"
+        }
+    ]
+}
