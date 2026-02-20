@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* 
+   Graph Theory PWA - Neo-SaaS / Cyber-Glass Theme 
+   Modern, Premium mobile-first CSS ported to SvelteKit
+*/
+
+:root {
+    /* Dark Mode Palette (Cyber-Glass) */
+    --bg-dark: #0a0c10;
+    --bg-darker: #050608;
+    --surface-dark: #12151b;
+    --surface-glass: rgba(20, 24, 32, 0.65);
+
+    /* Accents */
+    --accent-primary: #3b82f6;
+    /* Bright Blue */
+    --accent-secondary: #8b5cf6;
+    /* Rich Purple */
+    --accent-glow: rgba(59, 130, 246, 0.4);
+    --accent-success: #10b981;
+    --accent-error: #ef4444;
+
+    /* Text */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Borders & Shadows */
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --shadow-inner: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+
+    /* Geometry */
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+
+    /* Typography */
+    --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Reset & Base Setup */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overscroll-behavior-y: none;
+    /* Prevents pull-to-refresh bounce on mobile */
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
