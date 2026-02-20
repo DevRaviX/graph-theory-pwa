@@ -34,11 +34,11 @@
 </script>
 
 <div
-	class="app-container flex flex-col min-h-[100dvh] max-w-[800px] mx-auto relative"
+	class="app-container flex flex-col h-[100dvh] overflow-hidden max-w-[800px] mx-auto relative"
 >
 	<!-- Top Navigation -->
 	<header
-		class="top-nav sticky top-0 z-50 p-6 pb-6 bg-[var(--surface-glass)] backdrop-blur-xl border-b border-[var(--border-glass)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex flex-col gap-5 pt-[calc(env(safe-area-inset-top)+1.5rem)]"
+		class="top-nav shrink-0 z-50 p-4 sm:p-6 pb-4 sm:pb-6 bg-[var(--surface-glass)] backdrop-blur-xl border-b border-[var(--border-glass)] shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex flex-col gap-4 sm:gap-5 pt-[calc(env(safe-area-inset-top)+1rem)] sm:pt-[calc(env(safe-area-inset-top)+1.5rem)]"
 	>
 		<div class="header-top flex justify-between items-center">
 			<h1
@@ -58,11 +58,11 @@
 
 		<!-- Nav Tabs -->
 		<div
-			class="nav-toggle-group flex bg-[var(--bg-darker)] rounded-full p-1.5 border border-[var(--border-glass)] relative"
+			class="nav-toggle-group flex bg-[var(--bg-darker)] rounded-2xl sm:rounded-full p-1.5 border border-[var(--border-glass)] relative"
 		>
 			<a
 				href="/"
-				class="nav-tab flex-1 py-3 px-4 font-medium text-[0.95rem] rounded-full cursor-pointer flex items-center justify-center gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
+				class="nav-tab flex-1 py-1.5 sm:py-3 px-1 sm:px-4 font-medium text-[0.75rem] sm:text-[0.95rem] rounded-xl sm:rounded-full cursor-pointer flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@
 			</a>
 			<a
 				href="/practice"
-				class="nav-tab flex-1 py-3 px-4 font-medium text-[0.95rem] rounded-full cursor-pointer flex items-center justify-center gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
+				class="nav-tab flex-1 py-1.5 sm:py-3 px-1 sm:px-4 font-medium text-[0.75rem] sm:text-[0.95rem] rounded-xl sm:rounded-full cursor-pointer flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@
 			</a>
 			<a
 				href="/exam"
-				class="nav-tab flex-1 py-3 px-4 font-medium text-[0.95rem] rounded-full cursor-pointer flex items-center justify-center gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
+				class="nav-tab flex-1 py-1.5 sm:py-3 px-1 sm:px-4 font-medium text-[0.75rem] sm:text-[0.95rem] rounded-xl sm:rounded-full cursor-pointer flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 transition-all duration-300 z-10 text-[var(--text-muted)] hover:text-white aria-[current=page]:text-white aria-[current=page]:bg-[var(--surface-dark)] aria-[current=page]:shadow-[0_2px_10px_rgba(0,0,0,0.2),var(--shadow-inner)] aria-[current=page]:border aria-[current=page]:border-white/5"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@
 		</div>
 	</header>
 
-	<main class="main-content flex-1 p-6 sm:p-4">
+	<main class="main-content flex-1 overflow-y-auto p-4 sm:p-6 pb-20">
 		{@render children()}
 	</main>
 </div>

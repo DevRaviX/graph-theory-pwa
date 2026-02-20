@@ -183,7 +183,7 @@
                     </p>
                 </div>
                 <button
-                    class="w-full bg-[var(--surface-dark)] text-white border border-[var(--border-glass)] py-4 px-8 rounded-[var(--radius-sm)] font-semibold text-[1.05rem] cursor-pointer transition-all duration-200 hover:bg-white/5 active:scale-95"
+                    class="w-full bg-[var(--accent-primary)] text-white border-0 py-4 px-8 rounded-[var(--radius-sm)] font-semibold text-[1.05rem] cursor-pointer transition-all duration-200 shadow-[0_4px_15px_var(--accent-glow)] hover:bg-[#2563eb] active:scale-95"
                     onclick={nextQuestion}
                 >
                     {currentQIndex === currentQuestions.length - 1
